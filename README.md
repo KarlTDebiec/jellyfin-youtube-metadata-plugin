@@ -16,6 +16,7 @@ for content from Youtube.
   - Movies
   - Music Videos
   - Shows
+  - Home Videos
 - Supports ExternalID providing quick links to source of metadata.
 
 ### Requirements

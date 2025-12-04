@@ -10,7 +10,7 @@ namespace Jellyfin.Plugin.YoutubeMetadata.Providers.ExternalId
     public class YTVideoExternalId : IExternalId
     {
         public bool Supports(IHasProviderIds item)
-            => item is Movie || item is Episode || item is MusicVideo;
+            => item is Movie || item is Episode || item is MusicVideo || item is Video;
 
         public string ProviderName
             => "YouTube";
