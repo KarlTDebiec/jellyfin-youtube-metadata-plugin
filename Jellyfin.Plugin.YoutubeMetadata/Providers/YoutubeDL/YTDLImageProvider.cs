@@ -11,6 +11,7 @@ using MediaBrowser.Controller.Entities;
 using MediaBrowser.Controller.Entities.Movies;
 using MediaBrowser.Model.Entities;
 using MediaBrowser.Controller.Entities.TV;
+using MediaBrowser.Controller.Entities;
 
 namespace Jellyfin.Plugin.YoutubeMetadata.Providers.YoutubeDL
 {
@@ -107,6 +108,6 @@ namespace Jellyfin.Plugin.YoutubeMetadata.Providers.YoutubeDL
         /// <param name="item"></param>
         /// <returns></returns>
         public bool Supports(BaseItem item)
-            => item is Movie || item is Episode;
+            => item is Movie || item is Episode || item is Video;
     }
 }
